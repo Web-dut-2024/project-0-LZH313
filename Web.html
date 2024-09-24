@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Google</h1>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-bar" placeholder="Search Google or type a URL">
+            <button type="submit" class="search-button">Google Search</button>
+            <button type="submit" formaction="https://www.google.com/search?q=" class="feeling-lucky">I'm Feeling Lucky</button>
+        </form>
+        <div class="links">
+            <a href="image_search.html">Image Search</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Image Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Google Image Search</h1>
+        <form action="https://www.google.com/search?tbm=isch" method="GET">
+            <input type="text" name="q" class="search-bar" placeholder="Search Images">
+            <button type="submit" class="search-button">Search Images</button>
+        </form>
+        <div class="links">
+            <a href="index.html">Google Search</a>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Advanced Search</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Google Advanced Search</h1>
+        <form action="https://www.google.com/search" method="GET">
+            <label>Find pages with… “all these words:”</label>
+            <input type="text" name="allintext" class="search-bar">
+            <label>Find pages with… “this exact word or phrase:”</label>
+            <input type="text" name="exactphrase" class="search-bar">
+            <label>Find pages with… “any of these words:”</label>
+            <input type="text" name="anyintext" class="search-bar">
+            <label>Find pages with… “none of these words:”</label>
+            <input type="text" name="none" class="search-bar">
+            <button type="submit" class="search-button">Advanced Search</button>
+        </form>
+        <div class="links">
+            <a href="index.html">Google Search</a>
+        </div>
+    </div>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+}
+
+.search-button, .feeling-lucky {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 0 10px;
+}
